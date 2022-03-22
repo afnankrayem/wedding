@@ -3,8 +3,6 @@ session_start();
 require_once "model/index.php";
 require_once "controller/index.php";
 
-if (!isset($_GET['page'])){header('Location: ?page=home');}
-
 $page = $_GET['page'];
 
 switch($page){

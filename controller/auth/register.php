@@ -1,5 +1,4 @@
 <?php
-if(isset($_SESSION['role'])){ header('Location: ?page=dashboard'); }
 if($_SERVER['REQUEST_METHOD'] == 'POST'):
     extract($_POST);
     if($password == $r_password){
