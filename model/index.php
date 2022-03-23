@@ -15,25 +15,13 @@ class Model
   
     public function __construct($table)
     {
-        // if(!isset($_SESSION['db_connexion']))
-        // {
-        //     $_SESSION['db_connexion'] = new mysqli($this->_host, $this->_username, $this->_password, $this->_database);
-        // }
         $this->connexion = new mysqli($this->_host, $this->_username, $this->_password, $this->_database);
-        
         if($this->connexion->connect_errno){
             die("DATABASE NOT CONNECTED");
         }
-
         $this->table = $table;
         return $this;
     }
-    // public function __destruct() {
-    //     if (!$this->connexion->connect_error) {
-    //         $this->connexion->close();
-    //     }
-    // }
-
     public function is_db_connected() 
     {
         return $this->connexion->connect_errno == 0;
