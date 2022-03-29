@@ -16,9 +16,7 @@ class Model
     public function __construct($table)
     {
         $this->connexion = new mysqli($this->_host, $this->_username, $this->_password, $this->_database);
-        if($this->connexion->connect_errno){
-            die("DATABASE NOT CONNECTED");
-        }
+        if($this->connexion->connect_errno){ die("DATABASE NOT CONNECTED"); }
         $this->table = $table;
         return $this;
     }
