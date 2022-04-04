@@ -1,13 +1,14 @@
 <?php
 session_start();
-require_once "model/index.php";
+// require_once "model/index.php";
 require_once "controller/index.php";
 
 $page = $_GET['page'];
 
 switch($page){
     case 'home':
-            include "view/home.php";
+            // include "view/home.php";
+            include "view/admin/dashboard.php";
     break;
     case 'login':
             include "controller/auth/login.php";
