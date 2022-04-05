@@ -1,6 +1,6 @@
 <?php
 session_start();
-// require_once "model/index.php";
+require_once "model/index.php";
 require_once "controller/index.php";
 
 $page = $_GET['page'];
@@ -8,6 +8,7 @@ $page = $_GET['page'];
 switch($page){
     case 'home':
             // include "view/home.php";
+            include "controller/admin/clients.php";
             include "view/admin/dashboard.php";
     break;
     case 'login':
@@ -27,6 +28,10 @@ switch($page){
             switch($page){
                 case 'dashboard':
                     include "view/admin/dashboard.php";
+                break;
+                case 'clients':
+                    include "controller/admin/clients.php";
+                    include "view/admin/clients.php";
                 break;
                 case 'reservations':
                     include "view/admin/reservations.php";

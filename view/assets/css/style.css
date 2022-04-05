@@ -50,3 +50,12 @@
       width: 48px;
       font-size: 20px;
     }
+    button.close {
+      border: none;
+      background-color: transparent;
+      font-size: 24px;
+      font-weight: bold;
+  }
+  .modal-title, form label{
+    color: #2d3134;
+}
