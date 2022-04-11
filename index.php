@@ -46,7 +46,10 @@ switch($page){
         }else if ($role == "client"){
             switch($page){
                 case 'dashboard':
-                    include "view/cient/dashboard.php";
+                    include "view/client/dashboard.php";
+                break;
+                case 'profile':
+                    include "view/client/profile.php";
                 break;
                 case 'reservations':
                     include "view/client/reservations.php";
