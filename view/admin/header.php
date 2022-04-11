@@ -14,7 +14,7 @@
 
 <nav class="navbar navbar-light bg-light fixed-top">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">Dashboard</a>
+    <a class="navbar-brand" href="#"><?php if(isset($pagetitle)) echo $pagetitle;?></a>
     <button class="navbar-toggler" type="button">
         <i class="bi bi-box-arrow-right"></i>
     </button>
@@ -23,7 +23,7 @@
     </button>
     <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
       <div class="offcanvas-header">
-        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Dashboard</h5>
+        <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><?php if(isset($pagetitle)) echo $pagetitle;?></h5>
         <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
       </div>
       <div class="offcanvas-body">

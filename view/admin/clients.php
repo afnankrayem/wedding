@@ -1,4 +1,6 @@
-<?php include "header.php"; ?>
+<?php 
+$pagetitle = "Clients";
+include "header.php"; ?>
 
 <?php if(isset($deleted)){
       if($deleted): ?>
