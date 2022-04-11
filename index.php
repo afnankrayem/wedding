@@ -44,7 +44,7 @@ switch($page){
                     die("Page Not Found");
             }
         }else if ($role == "client"){
-            switch($page){
+            switch($page){ 
                 case 'dashboard':
                     include "view/client/dashboard.php";
                 break;
