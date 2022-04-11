@@ -7,9 +7,7 @@ $page = $_GET['page'];
 
 switch($page){
     case 'home':
-            // include "view/home.php";
-            include "controller/admin/clients.php";
-            include "view/admin/dashboard.php";
+            include "view/home.php";
     break;
     case 'login':
             include "controller/auth/login.php";
